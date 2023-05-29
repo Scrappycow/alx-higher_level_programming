@@ -8,5 +8,5 @@ def safe_function(fct, *args):
         output = fct(*args)
         return (output)
     except Exception as exception:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.std.err)
+        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (None)
