@@ -18,10 +18,10 @@ class Square:
         return (Self.__size) ** 2
 
     def size(self):
-        """set the size of the currebr square"""
+        """set the size of the current square"""
         return self.__size
 
-    def soze(self, value):
+    def size(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
         else:
