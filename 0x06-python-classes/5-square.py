@@ -1,15 +1,24 @@
 #!/usr/bin/python3
+"""define a class Square"""
 
 
 class Square:
+    """Rep aa square"""
+
     def __init__(self, size=0):
+        """create a new square
+
+        Args:
+        size (int): size of new square
+        """
         self.size = size
 
     def area(self):
+        """return are of current square"""
         return (Self.__size) ** 2
 
     def size(self):
-
+        """set the size of the currebr square"""
         return self.__size
 
     def soze(self, value):
@@ -22,6 +31,7 @@ class Square:
                 self.__size = value
 
     def my_print(self):
+        """print the square using # character"""
         if self.__size == 0:
             print()
             return
