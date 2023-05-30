@@ -1,9 +1,16 @@
 #!/usr/bin/python3
+"""define a new class Square"""
 
 
 class Square:
+    """a new square"""
 
     def __init__(self, size=0):
+        """initialize a new square
+
+        Args:
+        size (int): new square size
+        """
         self.size = size
 
     def area(self):
