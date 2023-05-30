@@ -14,14 +14,14 @@ class Square:
         self.size = size
 
     def area(self):
-
+        """return area of the current square"""
         return (Self.__size) ** 2
 
     def size(self):
-
+        """set size of current square"""
         return self.__size
 
-    def soze(self, value):
+    def size(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
         else:
