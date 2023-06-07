@@ -9,7 +9,7 @@ class Rectangle:
     print_symbol = "#"
 
     @staticmethod
-    def bigger_or_equal(ract_1, rect_2):
+    def bigger_or_equal(rect_1, rect_2):
         """returns rectangle with largest area"""
         if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -38,7 +38,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -50,7 +50,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.height = value
+        self.__height = value
 
     def area(self):
         return self.__width * self.__height
@@ -61,9 +61,11 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
+        string = ""
         if self.__width != 0 and self.__height != 0:
-            string += "\n".join("#" * self.__width for i in range(self.__height))
+            string += "\n".join("#" * self.__width
+                                for i in range(self.__height))
         return string
 
     def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(Self.__Width, self.__height)
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
