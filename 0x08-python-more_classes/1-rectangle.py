@@ -4,16 +4,20 @@
 
 
 class Rectangle:
+    """Rep of a rectangle"""
     def __init__(self, width=0, height=0):
+        """initializes the rectangle"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """private instance attribute width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter for private class with attribute width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -22,10 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """private instance attribute height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """setter for private class with attribute height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
