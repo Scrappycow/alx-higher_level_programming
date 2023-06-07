@@ -29,8 +29,8 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    """setter for the private instance attribute height"""
     def height(self, value):
+        """private instance attribute height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
