@@ -4,6 +4,7 @@
 
 
 class Rectangle:
+    """Rep of a rectangle"""
 
     number_of_instances = 0
 
