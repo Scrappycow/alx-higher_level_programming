@@ -14,7 +14,8 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     def __del__(self):
-        print("Bye rectangle..")
+        """prints a string when an instance is deleted"""
+        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
     @property
