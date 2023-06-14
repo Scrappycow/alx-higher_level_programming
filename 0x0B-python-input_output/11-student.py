@@ -24,7 +24,7 @@ class Student:
             for cats in range(len(attrs)):
                 for cat in obj:
                     if attrs[cats] == cat:
-                        new_list[cat] = obj[cat]
+                        dict_list[cat] = obj[cat]
             return dict_list
 
         return obj
