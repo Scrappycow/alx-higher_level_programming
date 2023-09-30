@@ -2,7 +2,6 @@
 """contains the function called find_peak"""
 
 
-"""finds a peak in the list of unsorted integers"""
 def find_peak(list_of_integers):
     """finds a peak in the list of unsorted integers"""
      if list_of_integers == []:
