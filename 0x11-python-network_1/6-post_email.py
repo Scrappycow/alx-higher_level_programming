@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-akes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter
+Takes a URL & email, sends POST request to passed URL with email as a parameter
 """
 if __name__ == '__main__':
     import requests
